@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actor Exercise</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">FigureActors</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Availablity</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Actors</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="row">
+            <h1 class="display-4">Pick a category :</h1>
+            <article class="col-12 text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                        <input type="radio" name="category" value="male" id="option1" autocomplete="off" checked />
+                        <i class="fas fa-male"></i>
+                        <p>Male</p>
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="category" value="female" id="option2" autocomplete="off" />
+                        <i class="fas fa-female"></i>
+                        <p>Female</p>
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="category" value="baby" id="option3" autocomplete="off" />
+                        <i class="fas fa-baby"></i>
+                        <p>Baby</p>
+                    </label>
+                </div>
+            </article>
+            <hr>
+
+
+        </section>
+        <section class="row">
+            <article class="col-12">
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="companyName">Company Name</label>
+                            <input required id="companyName" type="text" class="form-control" placeholder="Company name">
+                        </div>
+                        <div class="col">
+                            <label for="email">Email</label>
+                            <input required id="email" type="text" class="form-control" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="category">Category</label>
+                            <select required id="category" class="form-control">
+                                <option>male</option>
+                                <option>female</option>
+                                <option>baby</option>
+                            </select>
+                        </div>
+                        <div class="form-group col">
+                            <label for="actors">Actor</label>
+                            <select required id="actors" class="form-control">
+                                <option selected>Select an actor</option>
+                                <option>Magnus Jensen</option>
+                                <option>Richard Bradley</option>
+                                <option>Eduardo Martin</option>
+                                <option>Norah Faure</option>
+                                <option>Rose Clarke</option>
+                                <option>Adeline Mathieu</option>
+                                <option>Joe Edwards</option>
+                                <option>Bob Kelley</option>
+                                <option>John Doe</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Ask for availablity</button>
+                </form>
+            </article>
+        </section>
+        <section class="row">
+            <article class="col-12">
+                <div class="card-columns">
+                    <div class="card d-none">
+                        <img class="card-img-top" src="https://randomuser.me/api/portraits/men/1.jpg" alt="Card image cap">
+                        <div class="card-body"><h5 class="card-title">Name Surname</h5></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
